@@ -1,0 +1,306 @@
+/* All */
+html * {
+    font-family: 'Crimson Text', serif;
+    margin: 0;
+}
+
+/* Background */
+.mainContainer{
+    background-image: linear-gradient(rgb(127, 87, 153),white);
+    padding: 20px;
+    min-height: 90vh;
+}
+
+/* Header */
+header{
+    margin-bottom: 40px;
+}
+h1{
+    float: left;
+    color: rgb(86, 0, 143);
+    font-size: 38pt;
+    text-align: center;
+    background-color: white;
+    border: white 5px;
+    border-radius: 20px;
+    width: 450px;
+    box-shadow: black 3px 3px 2px;
+    padding: 12px 5px 7px 5px;
+    height: fit-content;
+}
+nav{
+    float: right;
+    width: 65%;
+}
+nav ul li a{
+    font-size: 22pt;
+    text-align: center;    
+    display: inline-block;
+    background-color: white;
+    border: white 5px;
+    border-radius: 20px;
+    padding: 10px 5px 7px 5px;
+    width: 205px;
+    box-shadow: black 3px 3px 2px;
+    transition: background-color 0.4s;
+}
+nav ul li{
+    list-style-type: none;    
+    display: inline-block;
+    margin: 10px 1%;
+}
+nav ul li a:hover{
+    background-color: teal;
+}
+nav ul li a:hover {
+    color: white;
+}
+nav a{
+    color: rgb(127, 87, 153);
+}
+
+/* Body Content */
+.bodyContent{
+    clear: both;
+    padding-top: 20px;
+}
+.bodyContent h2{
+    width: 100%;
+    text-align: center;
+    font-size: 32pt;
+    color: white;
+    box-shadow: black 3px 3px 2px;
+    text-shadow: black 3px 3px 3px;
+    padding: 20px 0px 20px 0px;
+}
+
+/* Social Media Body */
+#socialBody{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 2em;
+}
+#socialBody div{
+    padding: 10px;
+    margin: 0px 6%;
+    background-color: white;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: black 2px 2px 10px;
+}
+#socialBody img{
+    transition: width 0.3s;
+    margin: 0 auto;
+}
+#socialBody a:hover img{
+    width: 95%;
+}
+#socialBody div img{
+    width: 100%;
+}
+
+/* Photography Body */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.row img{
+    width: 40%;
+    box-shadow:0px 0px 10px black;
+    margin: 2%;
+    border: 18px solid black ;
+    border-radius: 30px;
+}
+#photoCredit{
+    font-size: 26pt;
+    color: white;
+    font-weight: bold;
+    padding-left: 40px;
+    text-shadow: black 2px 2px 3px;
+}
+
+/* Home Body Highlight Display */
+#highlightCardHolder{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.highlightCards{
+    margin: 3%;
+    border-radius: 30px;
+    box-shadow: black 2px 2px 10px;
+    /* width: 100%; */
+    background-color: teal;
+    width: auto;
+    height: fit-content;
+    /* display: inline-block; */
+}
+.highlightCards p{
+    font-size: 20pt;
+    color: white;
+    text-align: center;
+    margin: 0px 5px 5px 5px;
+}
+.highlightCards img{
+    width: 100%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+#movies div{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+#movies img{
+    width: 33.33%;
+}
+#synechdoche{
+    border-top-right-radius: 0px;
+    border-top-left-radius: 30px;
+}
+#mountain{
+    border-radius: 0px;
+}
+#killers{
+    border-top-right-radius: 30px;
+    border-top-left-radius: 0px;
+}
+#highlightCardHolder div:nth-of-type(1){flex-grow: 0.5;}
+#highlightCardHolder div:nth-of-type(2){flex-grow: 2;}
+#highlightCardHolder div:nth-of-type(3){flex-grow: 1;}
+
+/* Home Body Main Info Display */
+#mainInfoHolder{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.mainInfo{
+    margin: 0.6%;
+    border-radius: 30px;
+    /* box-shadow: black 2px 2px 10px; */
+    width: 100%;
+    /* background-color: white; */
+    /* height: fit-content; */
+    background-image: linear-gradient(white 50%,rgba(0, 0, 0, 0));
+    padding: 5px 0px 20px 0px;
+}
+h4{
+    border-bottom: solid rgb(86, 0, 143) 3px;
+    padding: 20px 10px 10px 0px;
+    font-size: 34pt;
+    text-align: center;
+}
+.mainInfo p{
+    font-size: 24pt;
+    margin: 0px 30px 10px 30px;
+}
+.mainInfo ul{
+    font-size: 18pt;
+    margin: 0px 30px 10px 30px;
+}
+audio{
+    border-radius: 50px;
+    box-shadow: black 2px 2px 10px;
+}
+
+/* Music */
+#musicBody p{
+    font-style: italic;
+    font-size: 24pt;
+    text-shadow: 1px 1px 4px white;
+    width: 100%;
+}
+#musicBody{
+    display: flex;
+    flex-wrap: wrap;
+}
+#musicBody div{
+    width: 28%;
+    margin-left: 2%;
+    margin-bottom: 90px;
+}
+#musicBody h2{
+    margin-bottom: 50px;
+}
+h5{
+    margin: 10px 50px 35px 50px;
+    width: 100%;
+    font-size: 24pt;
+    text-shadow: 1px 1px 4px white;
+    font-weight: bold;
+}
+#musicSidenote{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer p, h3{
+    font-size: 18pt;
+    display: inline;
+    margin: 10px;
+}
+footer{
+    border-top: black solid 2px;
+    padding: 20px;
+}
+footer a{
+    color: black;
+}
+footer a:hover{
+    text-decoration: underline teal;
+}
+
+/* Responsive Items */
+@media screen and (max-width: 1576px){
+    nav{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 1285px){
+    h1{
+        float: none;
+    }
+    nav{
+        float: none;
+        width: 100%;
+    }
+    nav ul li{  
+        margin: 10px 1%;
+    }
+}
+@media screen and (max-width: 1050px){
+    h1{
+        width: 100%;
+    }
+    nav{
+        width: 73%;
+    }
+    #highlightCardHolder{
+        flex-wrap: wrap;
+    }
+    .highlightCards{
+        width: 40%;
+    }
+    #movies{
+        order: -1;
+        width: 100%;
+    }
+    #mainInfoHolder{
+        flex-wrap: wrap;
+    }
+    #musicBody div{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 820px){
+    #socialBody{
+        flex-wrap: wrap;
+    }
+    #socialBody div{
+        margin: 5% 25%;
+    }
+    .row img{
+        width: 75%;
+    }
+}
